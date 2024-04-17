@@ -107,7 +107,7 @@ class BATT:
         XYZ[:,self.R._root_XYZ_inds[2],:] = p2
                  
         angles, torsions = self.AngleTorsion(n1, n2, va, vb)
-        angles = angles.clamp(min=1.52, max=2.47) #??????????????????
+        angles = angles.clamp(min=1.52, max=2.47) 
         
         cs_ang, sn_ang  = torch.cos(angles), torch.sin(angles)
         cs_tor, sn_tor  = torch.cos(torsions), torch.sin(torsions)
