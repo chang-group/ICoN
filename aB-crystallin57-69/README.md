@@ -1,7 +1,7 @@
 
 
-<div class="col-sm">
-     <img src="visual/ab13_movie.gif" mode=loop class="rounded mx-auto d-block float-center" alt="" width=70%>
+<div class="slowme">
+     <img src="visual/ab13_movie.gif" mode=loop class="rounded mx-auto d-block float-center" alt="" width=50%>
      <h6>Figure 1: ICoN generated synthetic conformations visualized for aB-cristallin57-69 peptide .</h6>
 </div>    
 
