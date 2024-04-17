@@ -39,12 +39,13 @@ def run_model(dat, modelE, modelD, indx, train = True, device='cuda'):
     z = modelE(feats)
     out = modelD(z)    
   
-    criterion =  nn.SmoothL1Loss(reduction='mean', beta=1.20) 
+    criterion =  nn.SmoothL1Loss(reduction='mean', beta=1.0) 
     loss = criterion(out, feats) 
     
     if train:
         loss.backward()
         optimizer.step()
+        #scheduler.step()
         
     return loss.item()
 
@@ -52,35 +53,39 @@ def run_model(dat, modelE, modelD, indx, train = True, device='cuda'):
 
 if __name__=='__main__':
         
-    lrt = 0.001
-    max_epoch = 5000
-    start = 0
+    lrt = 0.0001
+    max_epoch = 10000
+    start = 5000
     device='cuda'
     dev_id = 0    
-    #ReTrain = True
-    ReTrain = False
+    ReTrain = True
+    #ReTrain = False
  
     batch_size = 200
     spacing ="\t"
     out_path = 'output/'
     
-    params_file_name = 'net_params'
-    top_path = '../TRAJ/AB13.prmtop'
-    path = '../TRAJ/AB13.dcd'
-    
-    xyz, (u,R), n_atoms = load_xyz(path, top_path)
-    xyz = xyz[0:10000,:,:]
-        
+    name_list = ['idps/1z0q_1', 'idps/1z0q_2','idps/1z0q_3', 'idps/1z0q_4',
+                 'idps/1z0q_5', 'idps/1z0q_6', 'idps/2nao_mono_1',
+                 'idps/2nao_mono_2', 'idps/2nao_mono_3', 'idps/2nao_mono_4']
 
-    T_id = torch.arange(0, xyz.shape[0], 1)
-    V_id = torch.arange(1, xyz.shape[0], 2)
+    Traj_ID = 9 #int(sys.argv[1]) 
+    params_file_name = 'net_params' + name_list[Traj_ID][5:]
+    top_path = '../TRAJ/top.prmtop'
     
+    print('Training --', name_list[Traj_ID])
+    path = '../TRAJ/' + name_list[Traj_ID] + '.dcd'
+    xyz, (u,R), n_atoms = load_xyz(path, top_path)
+
+    T_id = torch.arange(0, xyz.shape[0], 2)
+    V_id = torch.arange(1, xyz.shape[0], 2)
+
     xyzT = xyz[T_id,:,:]
     xyzV = xyz[V_id,:,:]
     
     n_train = xyzT.shape[0] 
     n_valid = xyzV.shape[0]
- 
+
     n_torsions = n_atoms - 3
     n_feats = 4 * 3 * n_torsions # 4 vector feature   
     
@@ -88,7 +93,7 @@ if __name__=='__main__':
     B = BATT(R, device=device)
     datT = B.Coords2MainVecs(xyzT) # 4 vectors
     datV = B.Coords2MainVecs(xyzV)
- 
+
     del xyz, xyzT, xyzV
     
     torch.cuda.set_device(dev_id)
@@ -114,7 +119,7 @@ if __name__=='__main__':
         
         IV = np.random.randint(0, n_valid, batch_size)
         lossV = run_model(datV, modelE, modelD, IV, train = False, device=device)
-
+         
         
         if epoch % 1000 == 0:
             torch.save({'modelEncode': modelE.state_dict(), 'modelDecode': modelD.state_dict(),},
