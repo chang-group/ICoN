@@ -3,8 +3,7 @@
   <img src="docs/figs/ICoN.png">
 </p>
 
-## Internal Coordinate Net (ICoN) for Sampling Conformational Ensembles of Highly Dynamic Proteins via
-Generative Deep Learning
+## Internal Coordinate Net (ICoN) for Sampling Conformational Ensembles of Highly Dynamic Proteins via Generative Deep Learning
 
 1. ICoN is trained on ~10000 of fully atomistic and highly flexible conformations
 

@@ -53,13 +53,14 @@ def run_model(dat, modelE, modelD, indx, train = True, device='cuda'):
 
 if __name__=='__main__':
         
-    lrt = 0.0001
+    lrt = 0.0002 # learning rate
+    #lrt = 0.0001
     max_epoch = 10000
-    start = 5000
+    start = 0
     device='cuda'
     dev_id = 0    
-    ReTrain = True
-    #ReTrain = False
+    #ReTrain = True
+    ReTrain = False
  
     batch_size = 200
     spacing ="\t"
@@ -69,7 +70,7 @@ if __name__=='__main__':
                  'idps/1z0q_5', 'idps/1z0q_6', 'idps/2nao_mono_1',
                  'idps/2nao_mono_2', 'idps/2nao_mono_3', 'idps/2nao_mono_4']
 
-    Traj_ID = 9 #int(sys.argv[1]) 
+    Traj_ID = 9 #int(sys.argv[1]) # which traj to use from above list 
     params_file_name = 'net_params' + name_list[Traj_ID][5:]
     top_path = '../TRAJ/top.prmtop'
     
