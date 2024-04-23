@@ -1,10 +1,6 @@
 
 
-<div class="col-sm">
-     <img src="visual/ab13.mp4" mode=loop class="rounded mx-auto d-block float-center" alt="" width=50%>
-     <h6>Figure 1: ICoN generated synthetic conformations visualized for aB-cristallin57-69 peptide .</h6>
-</div>    
-
+<video src="visual/ab13.mp4"  width=180/>
 
 ## ICoN - generative model for sampling highly flexible protein conformations. 
 
@@ -15,14 +11,14 @@ Total number of [model parameters](https://drive.google.com/file/d/1TuqUo0TqlmM1
 ## Contents
 - Training
   - Provide path to all input files(.dcd, .prmtop) in `train.py`, then run:
-  - *python train.py*
+  - `python train.py`
   
 - Reconstruction
   - Provide path to validation set, then run:
-  - python reconstruct.py
+  - `python reconstruct.py`
   
 - Sampling
   - Sample synthetic conformations in large batch
-  - python sample.py 
+  - `python sample.py` 
 
 

@@ -8,14 +8,14 @@ Total number of [model parameters](https://drive.google.com/file/d/17UWB6yphaCiz
 ## Contents
 - Training
   - Provide path to all input files(.dcd, .prmtop) in `train.py`, then run:
-  - *python train.py*
+  - `python train.py`
   
 - Reconstruction
   - Provide path to validation set, then run:
-  - python reconstruct.py
+  -`python reconstruct.py`
   
 - Sampling
   - To avoid running out of GPU memory, we generate conformations in chunks (batches) by deviding entire set of synthetic conformations into 10 chunks. We provide chunk it and run it multiple times:
-  - for i in {0..9}; do python sample.py $i; done 
+  - `for i in {0..9}; do python sample.py $i; done` 
 
 
