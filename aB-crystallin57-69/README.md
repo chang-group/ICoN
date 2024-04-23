@@ -8,7 +8,8 @@
 
 ## ICoN model for sampling highly flexible protein conformations. 
 
-Number of Model parameters --  3294964
+Total number of model parameters --  3294964
+Download pretrained model [parameters](https://drive.google.com/file/d/1TuqUo0TqlmM1IThc9_B4M_uDjGPHDL1m/view?usp=drive_link)
 
 1. Generation of synthetic conformations for aB-cristalling57-69 with ICoN model
 
