@@ -3,7 +3,8 @@
   <img src="docs/figs/ICoN.png">
 </p>
 
-## ICoN model for sampling highly flexible protein conformations. 
+## Internal Coordinate Net (ICoN) for Sampling Conformational Ensembles of Highly Dynamic Proteins via
+Generative Deep Learning
 
 1. ICoN is trained on ~10000 of fully atomistic and highly flexible conformations
 
@@ -13,20 +14,19 @@
 
 
 
-
 ## Dependancies
 - `python` 3.8 >
-  - pytorch
-  - `MDAnalysis`
-  
+  - pytorch - for Deep Learning
+  - `MDAnalysis` - for trajectory I/O
+  - `pytraj` - for analysis
 
 ## Installation
 
 Clone the repository:
 
-*git clone https://github.com/chang-group/BondAngleTorsion.git*
+*git clone https://github.com/chang-group/ICoN.git*
 
-then run the following command:
+Then use the following commands from the respective directory:
 
 *python train.py*
 
