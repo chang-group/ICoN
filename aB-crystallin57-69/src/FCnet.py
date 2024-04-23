@@ -79,7 +79,7 @@ if __name__=='__main__':
     print(device)
     
     batch_size = 2
-    n_torsions = 1256
+    n_torsions = 198
     n_feats =  4 * 3 * n_torsions
     
     inp = torch.rand(batch_size, n_feats).to(device)    
