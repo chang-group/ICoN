@@ -1,4 +1,9 @@
 
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=Yo3NVWAFruA"><img src="https://img.youtube.com/vi/Yo3NVWAFruA/0.jpg" alt
+="IMAGE ALT TEXT"></a>
+</div>
+
 ## ICoN - generative model for sampling highly flexible protein conformations. 
 
 Total number of [model parameters](https://drive.google.com/file/d/17UWB6yphaCizXIb_FPon4H4b_-NThL4V/view?usp=sharing) -- 32721156
