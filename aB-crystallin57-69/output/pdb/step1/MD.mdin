@@ -1,0 +1,19 @@
+implict_water
+        &cntrl
+        imin   = 1,
+        ntmin  = 1,
+        maxcyc = 1000,
+        ncyc   = 100,
+        ntwx   = 500, 
+        ntwe   = 500, 
+        ntwr   = 500, 
+        ntpr = 500, 
+        ntb    = 0,
+        igb    = 8,
+        cut    = 12,
+        irest = 0,
+        ntx = 1,
+        ntrx = 1,
+        ntr = 0
+        /
+        
