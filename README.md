@@ -21,17 +21,8 @@
 
 ## Installation
 
-Clone the repository:
-
-*git clone https://github.com/chang-group/ICoN.git*
-
-Then use the following commands from the respective directory:
-
-*python train.py*
-
-*python reconstruct.py*
-
-*python sample.py*
-
+- Clone the repository:
+  *git clone https://github.com/chang-group/ICoN.git*
+- Navigate to corresponding folder for further instruction
 
 
