@@ -1,17 +1,16 @@
-Here we eliminate comformations by comparing to raw MD using 2A RMSD cutoff
 
-0-20000
-Number of conformations under heavy atom cutoff 2.0similar to original MD confs 3573
+Here we eliminate comformations by comparing to raw MD using 1.2 A heavy atom RMSD cutoff
 
-20000-40000
-Number of conformations under heavy atom cutoff 2.0similar to original MD confs 6078
-
-40000-60000
-Number of conformations under heavy atom cutoff 2.0similar to original MD confs 6842
-
-
-60000 - 70000
-Number of conformations under heavy atom cutoff 2.0similar to original MD confs 1392
-
-
-Total conformations left -- 48320
+- It requires `pytraj`
+- Inputs are:
+  - '.dcd' output file of previous step & '.prmtop' file
+  - also provide path to raw MD '.dcd' file
+- Output:
+  - '.dcd' file, remaing conformations
+- Make sure all input and output path are correct then run
+  - `python GetNovelConfs.py start end`
+    - In order to speedup calculation one can run separate chunks in separte CPU with interval
+    - start - is starting synthetic conformations ID
+    - last - last synthetic conformations ID of the chunk
+- Once selected conformations are outputted in chunks, one can merge them using
+  - `python MergeDCD.py`

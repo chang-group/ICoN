@@ -5,9 +5,9 @@ import sys
 import os
 
 TOP = '../../../top.prmtop'
-path = './out/'
+path = './'
 DIR_SAVE = './'
-file_name = '1z0q_1_14SB_'
+file_name = 'AB13'
 
 ls_files = os.listdir(path) # your directory path
 n_files = len(ls_files)     # n files 
@@ -18,4 +18,4 @@ print(TRAJ)
 traj = pt.iterload(TRAJ, TOP, stride=1)
 print(traj.shape)
 
-pt.write_traj(DIR_SAVE + file_name + 'SyntheticAll' + '.dcd', traj, overwrite=True)
+pt.write_traj(DIR_SAVE + file_name + 'SyntheticNovel' + '.dcd', traj, overwrite=True)

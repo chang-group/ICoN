@@ -56,6 +56,6 @@ def collect_energies(work_dir: str) -> DataFrame:
 
 
 # 1. Collect energies of minimized frames
-pdb = '1z0q_1_14sbff' # output name
+pdb = 'aB13' # output name
 energies = collect_energies(work_dir='mdout/')
 energies.to_csv(pdb + '_energies.csv', index=False)

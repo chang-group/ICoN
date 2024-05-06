@@ -7,8 +7,8 @@ import sys
 import os
 import pytraj as pt
 
-thresh = -400.0
-name = '1z0q_1'
+thresh = -200.0
+name = 'AB13'
 # load energies
 path = '../' + name + '_energies.csv'
 ener_p = pd.read_csv(path, sep=",") 
@@ -23,8 +23,8 @@ sel_frames = dum_ints[ener_p['tot'] < thresh]
 print('Percenntage of ramaining conformations -- ',sel_frames.shape[0]/dum_ints.shape[0])
 print('Number of conf remaining', sel_frames.shape[0])
 
-TRAJ = name + 'SyntheticAll' + '.dcd'
-TOP = '../../../top.prmtop'
+TRAJ = name + 'Synthetic' + '.dcd'
+TOP = '../../../AB13.prmtop'
 traj = pt.iterload(TRAJ, TOP, stride=1)
 
 
