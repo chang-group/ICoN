@@ -12,6 +12,8 @@ Total number of [model parameters](https://drive.google.com/file/d/1TuqUo0TqlmM1
 
 ## Contents
 - Training
+  - [Training and validation sets](https://drive.google.com/file/d/1-VlshgKtz4Fs6p5dzLS3cv6Q-6AquoIL/view?usp=drive_link)
+  - Promtop file for [aB-cristalling57-69](https://drive.google.com/file/d/10nbKLLoAYFxIaogi6aOY62uopgAbbAi5/view?usp=drive_link)
   - Provide path to all input files(.dcd, .prmtop) in `train.py`, then run:
   - `python train.py`
   
