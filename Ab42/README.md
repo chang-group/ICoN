@@ -16,6 +16,13 @@ Total number of [model parameters](https://drive.google.com/file/d/17UWB6yphaCiz
   [MDrun2](https://drive.google.com/file/d/1pkxOiUsPgQJpIh4vhQVD6sXj1nmGXPZ6/view?usp=sharing),
   [MDrun3](https://drive.google.com/file/d/1PBHn17eIpDwhHz0Go5Lyfqfx8DaWmdG8/view?usp=sharing),
   [MDrun4](https://drive.google.com/file/d/1UdiL5UhbtoS2pNQ6iuuZhdcOiKVn_v_1/view?usp=sharing).
+
+- Part of RAW MD used in step4. This are conformations extracted with frequence 10 (1 every 10 frames from RAW MD). 
+  [MDrun1](https://drive.google.com/file/d/1LF2FLHp54xvjbY6PVU2TeFEjfNtGuYhE/view?usp=sharing),
+  [MDrun2](https://drive.google.com/file/d/1PmfPV5UP6UXks5zBZOcI5BRUOr7GkR2T/view?usp=sharing),
+  [MDrun4](https://drive.google.com/file/d/1-hDkcckZbFECW63TR8wToPy8fRJg16Ys/view?usp=sharing).
+
+
   - Promtop file for [Ab42](https://drive.google.com/file/d/1JEtWP2Qj9CbuidBTE3MZdI7GGxJEBO4Z/view?usp=drive_link)
   - Provide path to all input files(.dcd, .prmtop) in `train.py`, then run:
   - `python train.py`
