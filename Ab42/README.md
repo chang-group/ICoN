@@ -12,7 +12,10 @@ Total number of [model parameters](https://drive.google.com/file/d/17UWB6yphaCiz
 
 ## Contents
 - Training
-  - Training and validation sets for [MDrun1](https://drive.google.com/file/d/1hTl-_AWGQG7ZYrxbCy40-GyiDe6yX5uh/view?usp=sharing)
+  - Training and validation sets for [MDrun1](https://drive.google.com/file/d/1hTl-_AWGQG7ZYrxbCy40-GyiDe6yX5uh/view?usp=sharing),
+  [MDrun2](https://drive.google.com/file/d/1pkxOiUsPgQJpIh4vhQVD6sXj1nmGXPZ6/view?usp=sharing),
+  [MDrun3](https://drive.google.com/file/d/1PBHn17eIpDwhHz0Go5Lyfqfx8DaWmdG8/view?usp=sharing),
+  [MDrun4](https://drive.google.com/file/d/1UdiL5UhbtoS2pNQ6iuuZhdcOiKVn_v_1/view?usp=sharing).
   - Promtop file for [Ab42](https://drive.google.com/file/d/1JEtWP2Qj9CbuidBTE3MZdI7GGxJEBO4Z/view?usp=drive_link)
   - Provide path to all input files(.dcd, .prmtop) in `train.py`, then run:
   - `python train.py`
