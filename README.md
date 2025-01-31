@@ -31,7 +31,6 @@
 1.	Make a folder (i.e., ICON_Model) and copy the downloaded folder (aB-crystallin57-69) into it. (you can change the name of both folders accordingly)
 2.	Make a folder (i.e., TRAJ) within the ICON_Model folder to copy the trajectory .dcd and topology files .prmtop.
 Please go to the aB-crystallin57-69 folder for further details of each step.
-![image](https://github.com/user-attachments/assets/b13314f9-7337-45fc-9d2e-6cef499ed915)
 
 
 
