@@ -1,5 +1,5 @@
 # 03/21/23 19:58:15
-parm AB13.prmtop
-trajin inp/aB13Synthetic.dcd
+parm ../../../../AB13.prmtop
+trajin ../NonLinIntAll.dcd
 trajout inp/rst7/MD.rst7 #offset 2
 run
