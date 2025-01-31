@@ -12,7 +12,7 @@ Total number of [model parameters](https://drive.google.com/file/d/1TuqUo0TqlmM1
 
 ## Instruction
 1.	In the train.py file, provide the path to all input files and change the trajectory and topology file names accordingly. (In train.py file, 68 and 69 lines)
-2.	2.	Now you can start training your data with the Python train.py command line.
+2.	2.	Now you can start training your data with the `Python train.py` command line.
 3.	The raw data for the loss function will be produced in /output/log_train_val.txt. The users can then check the loss function using the/visual/loss.py script.
 4.	Provide the path to the validation set, which would be providing the path to the trajectory .dcd and topology .prmtop files in lines 64 and 65 in the reconstruct.py file. The reconstructed .dcd file would be generated in the /output/pdb folder.
 5.	Save a .pdb (i.e., 0-frame.pdb) file from one of the frames in your original trajectory .dcd file and then transfer the 0-frame.pdb file to the /ICON_Model/TRAJ folder. 
