@@ -111,7 +111,7 @@ if __name__=='__main__':
      
     params_file_name = 'net_params'
     top_path = '../TRAJ/AB13.prmtop'
-    path = './output/pdb/idps/50to56/50.pdb'
+    path = '../TRAJ/0-frame.pdb'
     out_path = 'output/'
     pdb_name = "AB13"
 
