@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/figs/ICoN-v1.png">
+  <img src="figs/ICoN-v1.png">
 </p>
 
 ## Internal Coordinate Net version 1 (ICoN-v1) for Sampling Conformational Transition Pathway
