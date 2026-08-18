@@ -11,3 +11,8 @@
 3. It use Transformer and Molecular Mechanic Energy (loss function) during training. 
 
 4. It can reveal the concerted and sequential torsional rotation during transition.
+
+## Dependancies
+- `python` 3.10 >
+  - pytorch - for Deep Learning
+  - `pytraj` - for trajectory I/O
